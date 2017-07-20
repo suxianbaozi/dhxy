@@ -4,7 +4,7 @@ import time
 from control import *
 from pop import bubble
 from screen import closeScreen,openSecreen
-
+from zuotian import Zuotian
 
 def message(str) :
     bubble.startBubble(u'挂机',str+time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())),0)
@@ -12,7 +12,7 @@ def message(str) :
 def sheyaoxiang():
 
     time.sleep(3)
-    mouse_click(802,898)
+    mouse_click(891,573)
     time.sleep(1)
     mouse_click(1249, 863)
     time.sleep(2)  
@@ -66,14 +66,22 @@ def checkIsDahua():
 
 from PIL import Image, ImageGrab
 if __name__ == "__main__":
-    time.sleep(5)
-    closeScreen()
+
+    is_zuotian = False
+    # closeScreen()
     while True:
-        time.sleep(32*60)
         openSecreen()
         time.sleep(5)
         if checkIsDahua():
             if not checkZhandou():
+
+                #判断是否可以做天
+                if int(time.strftime('%H',time.localtime(time.time()))) == 5  and (not is_zuotian):
+                    #进入昨天逻辑
+                    Zuotian().go()
+                    is_zuotian = True
+
+
                 message('等待5s判断是否有香'.decode('utf8'))
                 #wait for 5 sec
                 time.sleep(5)
@@ -86,6 +94,7 @@ if __name__ == "__main__":
                         message('有香'.decode('utf8'))
         time.sleep(5)
         closeScreen()
+        time.sleep(31*60)
         #time.sleep(35*60)
 
 
