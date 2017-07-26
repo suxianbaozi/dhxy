@@ -22,6 +22,9 @@ class Zuotian:
         self.not_have_mission = 0
 
     def go_get_mission(self):
+        time.sleep(3)
+        mouse_click(891,573)
+        time.sleep(1)
         mouse_click(426,197)
         time.sleep(1)
         mouse_click(615,301)
@@ -49,14 +52,33 @@ class Zuotian:
         time.sleep(1)
         mouse_click(1309,269)
         time.sleep(2)
+    def check_secret_monster_king(self):
+        pass
+
+    def checkSecretMonster(self):
+        missionImage = ImageGrab.grab((1160,397,1241,419))
+
+        missionImage = Image.open("C:\\Users\\admin\\Desktop\\QQ图片20170724092409.png".decode('utf8'))
 
 
+        enhancer = ImageEnhance.Contrast(missionImage)
+        im = enhancer.enhance(3)
+        #将图片转换成灰度图片
+        missionImage = missionImage.convert("L")
+        twoValue(missionImage)
+
+        missionImage.save("text/%s.png"%"神秘妖王".decode('utf8'))
+
+        imageText = Image.open("text/%s.png"%"神秘妖王".decode('utf8'))
+        #将图片转换成灰度图片
+        imageText = imageText.convert("L")
+
+        return diffTwoImage(missionImage,imageText)
 
     def auto_click_mission(self):
         while True:
-
             if not checkZhandou():
-                if self.checkIsTian():
+                if checkIsMission('天庭降妖'):
                     message('在任务中'.decode('utf8'))
                     self.not_have_mission = 0
                     mouse_click(1249,358)
@@ -75,3 +97,6 @@ class Zuotian:
         self.go_get_mission()
         self.auto_click_mission()
 
+
+if __name__ == "__main__":
+    Zuotian().checkSecretMonster()

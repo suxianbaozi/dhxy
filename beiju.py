@@ -17,8 +17,8 @@ if __name__ == "__main__":
                 #判断是否可以做天
                 print '做天条件：'.decode('utf8'),time.localtime().tm_hour,is_zuotian
 
-                if time.localtime().tm_hour == 6 and (not is_zuotian):
-                    message('领任务昨天'.decode('utf8'))
+                if (time.localtime().tm_hour == 6) and (not is_zuotian):
+                    message('去领做天任务啦'.decode('utf8'))
                     #进入昨天逻辑
                     Zuotian().go()
                     is_zuotian = True
