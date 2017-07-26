@@ -2,7 +2,7 @@
 from baotu import Baotu
 from shimen import Shimen
 from wuhuan import Wuhuan
-
+from bangpai import Bangpai
 
 
 
@@ -11,4 +11,5 @@ from wuhuan import Wuhuan
 if __name__ == "__main__":
     Baotu().go()
     Shimen().go()
+    Bangpai().go()
     Wuhuan().go()

@@ -4,16 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/zuotian.py" line="96" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7e72c41-a29a-4d0c-adde-9a098e292fca" name="Default" comment="ff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bangpai.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baotu.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/danren.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shimen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wuhuan.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beiju.py" afterPath="$PROJECT_DIR$/beiju.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dahua.py" afterPath="$PROJECT_DIR$/dahua.py" />
+    <list default="true" id="d7e72c41-a29a-4d0c-adde-9a098e292fca" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/danren.py" afterPath="$PROJECT_DIR$/danren.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zuotian.py" afterPath="$PROJECT_DIR$/zuotian.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wuhuan.py" afterPath="$PROJECT_DIR$/wuhuan.py" />
     </list>
     <ignored path="beiju.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/beiju.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
               <folding>
                 <element signature="e#25#67#0" expanded="true" />
               </folding>
@@ -46,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wuhuan.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wuhuan.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wuhuan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.6135593">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -60,9 +54,9 @@
         <entry file="file://$PROJECT_DIR$/danren.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
-                <marker date="1501034027103" expanded="true" signature="23:98" placeholder="import ..." />
+                <element signature="e#23#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dahua.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dahua.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dahua.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42881355">
+            <state vertical-scroll-proportion="0.0">
               <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
               <folding>
                 <element signature="e#25#46#0" expanded="true" />
@@ -146,12 +140,12 @@
         <option value="$PROJECT_DIR$/result.txt" />
         <option value="$PROJECT_DIR$/zuotian.py" />
         <option value="$PROJECT_DIR$/beiju.py" />
-        <option value="$PROJECT_DIR$/danren.py" />
-        <option value="$PROJECT_DIR$/wuhuan.py" />
         <option value="$PROJECT_DIR$/baotu.py" />
         <option value="$PROJECT_DIR$/shimen.py" />
         <option value="$PROJECT_DIR$/bangpai.py" />
         <option value="$PROJECT_DIR$/dahua.py" />
+        <option value="$PROJECT_DIR$/danren.py" />
+        <option value="$PROJECT_DIR$/wuhuan.py" />
       </list>
     </option>
   </component>
@@ -207,20 +201,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beiju" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beiju" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="text" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -236,24 +216,7 @@
       <recent name="C:\Users\admin\Desktop\beiju" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bangpai">
-    <configuration default="false" name="baotu" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="beiju" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baotu.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.beiju">
     <configuration default="false" name="shimen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -318,6 +281,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="beiju" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bangpai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="beiju" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="beiju" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/beiju.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -445,19 +425,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.baotu" />
-      <item index="1" class="java.lang.String" itemvalue="Python.shimen" />
-      <item index="2" class="java.lang.String" itemvalue="Python.danren" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dahua" />
-      <item index="4" class="java.lang.String" itemvalue="Python.bangpai" />
+      <item index="0" class="java.lang.String" itemvalue="Python.shimen" />
+      <item index="1" class="java.lang.String" itemvalue="Python.danren" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dahua" />
+      <item index="3" class="java.lang.String" itemvalue="Python.bangpai" />
+      <item index="4" class="java.lang.String" itemvalue="Python.beiju" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.bangpai" />
-        <item index="1" class="java.lang.String" itemvalue="Python.danren" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dahua" />
-        <item index="3" class="java.lang.String" itemvalue="Python.shimen" />
-        <item index="4" class="java.lang.String" itemvalue="Python.baotu" />
+        <item index="0" class="java.lang.String" itemvalue="Python.beiju" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bangpai" />
+        <item index="2" class="java.lang.String" itemvalue="Python.danren" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dahua" />
+        <item index="4" class="java.lang.String" itemvalue="Python.shimen" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +470,19 @@
       <option name="project" value="LOCAL" />
       <updated>1500792092488</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="帮派">
+      <created>1501036818835</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1501036818835</updated>
+    </task>
+    <task id="LOCAL-00005" summary="帮派">
+      <created>1501036829533</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1501036829533</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -499,6 +491,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33626375" sideWeight="0.52891695" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -509,7 +502,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -531,7 +523,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ff" />
-    <option name="LAST_COMMIT_MESSAGE" value="ff" />
+    <MESSAGE value="帮派" />
+    <option name="LAST_COMMIT_MESSAGE" value="帮派" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -873,16 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/danren.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <marker date="1501034027103" expanded="true" signature="23:98" placeholder="import ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baotu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -916,31 +899,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dahua.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+          <folding>
+            <element signature="e#25#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beiju.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
           <folding>
             <element signature="e#25#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wuhuan.py">
+    <entry file="file://$PROJECT_DIR$/danren.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#23#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dahua.py">
+    <entry file="file://$PROJECT_DIR$/wuhuan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42881355">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-          <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.6135593">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
