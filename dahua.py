@@ -3,14 +3,14 @@
 from control import *
 from pop import bubble
 from PIL import Image, ImageGrab,ImageDraw,ImageEnhance
-def twoValue(image):
+def twoValue(image,f=140):
     draw = ImageDraw.Draw(image)
     print image.size
     for x in range(image.size[0]):
         for y in range(image.size[1]):
             L = image.getpixel((x,y))
             #print x,y,'=',L
-            if L > 140:
+            if L > f:
                 draw.point((x,y),255)
             else:
                 draw.point((x,y),0)
@@ -60,6 +60,20 @@ def checkXiang():
         return True
     else:
         return False
+
+def checkIsKillSomeBody():
+    log(u'抓取屏幕')
+    imcheckopen = ImageGrab.grab((1343,231,1348,235))
+    color = imcheckopen.getpixel((1,1))
+    log(u'抓取屏幕成功')
+    if '%d'*3%color=='234113111':
+        message(u'当前正要教训某人')
+        return True
+    else:
+        print '%d'*3%color
+        message(u'当前正要教训某人')
+        return False
+
 
 def checkIsBuyPower():
     log(u'抓取屏幕')

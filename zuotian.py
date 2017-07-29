@@ -3,19 +3,6 @@ from PIL import Image,ImageDraw,ImageEnhance,ImageFilter
 from PIL import Image, ImageGrab
 from dahua import *
 
-def twoValue(image):
-    draw = ImageDraw.Draw(image)
-    print image.size
-    for x in range(image.size[0]):
-        for y in range(image.size[1]):
-            L = image.getpixel((x,y))
-            #print x,y,'=',L
-            if L > 180:
-                draw.point((x,y),255)
-            else:
-                draw.point((x,y),0)
-
-
 class Zuotian:
     def __init__(self):
         self.end = True
@@ -52,22 +39,17 @@ class Zuotian:
         time.sleep(1)
         mouse_click(1309,269)
         time.sleep(2)
-    def check_secret_monster_king(self):
-        pass
+
 
     def checkSecretMonster(self):
-        missionImage = ImageGrab.grab((1160,397,1241,419))
-
-        missionImage = Image.open("C:\\Users\\admin\\Desktop\\QQ图片20170724092409.png".decode('utf8'))
-
-
+        missionImage = ImageGrab.grab((1160,395,1160+82,395+27))
         enhancer = ImageEnhance.Contrast(missionImage)
         im = enhancer.enhance(3)
         #将图片转换成灰度图片
         missionImage = missionImage.convert("L")
         twoValue(missionImage)
 
-        missionImage.save("text/%s.png"%"神秘妖王".decode('utf8'))
+        #missionImage.save("text/%s.png"%"神秘妖王2".decode('utf8'))
 
         imageText = Image.open("text/%s.png"%"神秘妖王".decode('utf8'))
         #将图片转换成灰度图片
@@ -81,7 +63,10 @@ class Zuotian:
                 if checkIsMission('天庭降妖'):
                     message('在任务中'.decode('utf8'))
                     self.not_have_mission = 0
-                    mouse_click(1249,358)
+                    if self.checkSecretMonster():
+                        mouse_click(1249,412)
+                    else:
+                        mouse_click(1249,358)
                 else:
                     self.not_have_mission += 1
                     message(('不在任务第%d次'%(self.not_have_mission)).decode('utf8'))

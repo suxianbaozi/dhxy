@@ -6,8 +6,6 @@ from bangpai import Bangpai
 
 
 
-
-
 if __name__ == "__main__":
     Baotu().go()
     Shimen().go()

@@ -60,6 +60,12 @@ class Bangpai:
                         time.sleep(1)
                         continue
 
+                    if checkIsKillSomeBody():
+                        mouse_click(1159,603)
+                        self.not_have_mission = 0
+                        time.sleep(1)
+                        continue
+
                     self.not_have_mission += 1
                     message(('不在任务第%d次'%(self.not_have_mission)).decode('utf8'))
                     if self.not_have_mission > 5:
