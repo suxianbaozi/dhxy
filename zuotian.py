@@ -18,7 +18,7 @@ class Zuotian:
         time.sleep(1)
         mouse_click(849,495)
 
-        time.sleep(2)
+        time.sleep(1)
         mouse_click(1213,272)
 
         time.sleep(5)
@@ -40,6 +40,13 @@ class Zuotian:
         mouse_click(1309,269)
         time.sleep(2)
 
+    def checkDoubleConfirm(self):
+        image = ImageGrab.grab((924,605,943,620))
+        color = '%d%d%d'%image.getpixel((18,7))
+        print color
+        if color == '255255255':
+            return True
+        return False
 
     def checkSecretMonster(self):
         missionImage = ImageGrab.grab((1160,395,1160+82,395+27))
@@ -64,6 +71,7 @@ class Zuotian:
                     message('在任务中'.decode('utf8'))
                     self.not_have_mission = 0
                     if self.checkSecretMonster():
+                        message('检测到神秘妖王'.decode('utf8'))
                         mouse_click(1249,412)
                     else:
                         mouse_click(1249,358)
@@ -84,4 +92,5 @@ class Zuotian:
 
 
 if __name__ == "__main__":
-    Zuotian().checkSecretMonster()
+    time.sleep(3)
+    Zuotian().checkDoubleConfirm()

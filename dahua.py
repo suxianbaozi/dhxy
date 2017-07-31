@@ -25,7 +25,7 @@ def sheyaoxiang():
     time.sleep(1)
     mouse_click(1249, 863)
     time.sleep(2)  
-    mouse_dclick(1162, 424)
+    mouse_dclick(*find_sheyao_xiang())
     time.sleep(2)
     mouse_click(1026, 636)
     time.sleep(2)
@@ -148,8 +148,63 @@ def checkIsMission(name):
     imageText = imageText.convert("L")
 
     return diffTwoImage(missionImage,imageText)
+def find_sheyao_xiang():
+    missionImage = ImageGrab.grab((891,388,1279,556))
+    missionImage.save('text/1.png')
+
+    #第一排
+    color = missionImage.getpixel((41,18))
+    if '%d'*3%color=='373632':
+        return (936,426)
+
+
+    color = missionImage.getpixel((117,18))
+    if '%d'*3%color=='124125120':
+        return (1009,426)
+
+
+    color = missionImage.getpixel((194,18))
+    if '%d'*3%color=='686865':
+        return (1009+77,426)
+
+
+    color = missionImage.getpixel((271,18))
+    if '%d'*3%color=='121110':
+        return (1009+77+77,426)
+
+
+    color = missionImage.getpixel((348,18))
+    if '%d'*3%color=='151513':
+        return (1009+77+77+77,426)
+
+
+
+    #第二排
+    color = missionImage.getpixel((41,106))
+    if '%d'*3%color=='938981':
+        return (936,426+88)
+
+
+    color = missionImage.getpixel((118,106))
+    if '%d'*3%color=='575752':
+        return (1009,426+88)
+
+
+    color = missionImage.getpixel((195,106))
+    if '%d'*3%color=='515147':
+        return (1009+77,426+88)
+
+
+    color = missionImage.getpixel((272,106))
+    if '%d'*3%color=='505046':
+        return (1009+77+77,426+88)
+
+
+    color = missionImage.getpixel((349,106))
+    if '%d'*3%color=='505046':
+        return (1009+77+77+77,426+88)
+
 
 if __name__ == "__main__":
-    while True:
-        time.sleep(3)
-        checkIsBuyPower()
+    time.sleep(3)
+    mouse_move(*find_sheyao_xiang())
