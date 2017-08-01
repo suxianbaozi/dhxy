@@ -70,7 +70,7 @@ class Zuotian:
             #判断是否弹出了领取双倍的窗口
             if self.checkDoubleConfirm():
                 message('取消领取双倍'.decode('utf8'))
-                mouse_click(754,635)
+                mouse_click(1016,635)
                 time.sleep(2)
             if not checkZhandou():
                 if checkIsMission('天庭降妖'):
