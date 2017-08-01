@@ -23,6 +23,7 @@ class Zuotian:
 
         time.sleep(5)
         mouse_click(1171,618)
+        time.sleep(2)
 
     def checkIsTian(self):
         image = ImageGrab.grab((1161,349,1359,371))
@@ -43,8 +44,7 @@ class Zuotian:
     def checkDoubleConfirm(self):
         image = ImageGrab.grab((924,605,943,620))
         color = '%d%d%d'%image.getpixel((18,7))
-        print color
-        if color == '255255255':
+        if color == '161215179':
             return True
         return False
 
@@ -66,6 +66,12 @@ class Zuotian:
 
     def auto_click_mission(self):
         while True:
+            time.sleep(1)
+            #判断是否弹出了领取双倍的窗口
+            if self.checkDoubleConfirm():
+                message('取消领取双倍'.decode('utf8'))
+                mouse_click(754,635)
+                time.sleep(2)
             if not checkZhandou():
                 if checkIsMission('天庭降妖'):
                     message('在任务中'.decode('utf8'))
@@ -81,10 +87,10 @@ class Zuotian:
                     if self.not_have_mission > 10:
                         #已经结束
                         #回悲剧
-                        self.go_back_beiju()
+                        go_back_beiju()
                         break
 
-            time.sleep(3)
+            time.sleep(2)
 
     def go(self):
         self.go_get_mission()
