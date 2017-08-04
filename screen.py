@@ -19,9 +19,6 @@ def openSecreen():
 # shell32.ShellExecuteW(None,'open', 'rundll32.exe', 'USER32,LockWorkStation','',SW_SHOW)
 
 if __name__ == "__main__":
+    time.sleep(3)
+    closeScreen()
 
-    while True:
-        closeScreen()
-        time.sleep(15*60)
-        openSecreen()
-        time.sleep(20)

@@ -67,9 +67,16 @@ class Zuotian:
     def auto_click_mission(self):
         while True:
             time.sleep(1)
+            try:
+                image = ImageGrab.grab((376,153,1398,917))
+                image.save('screen/%s.png'%str(int(time.time())))
+            except:
+                pass
+
+
             #判断是否弹出了领取双倍的窗口
             if self.checkDoubleConfirm():
-                message('取消领取双倍'.decode('utf8'))
+                message('自动领取双倍'.decode('utf8'))
                 mouse_click(1016,635)
                 time.sleep(2)
             if not checkZhandou():
