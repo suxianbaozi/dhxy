@@ -3,7 +3,7 @@
 from screen import closeScreen,openSecreen
 from zuotian import Zuotian
 from dahua import *
-
+from danren import danren
 if __name__ == "__main__":
 
     is_zuotian = False
@@ -17,11 +17,15 @@ if __name__ == "__main__":
                 #判断是否可以做天
                 print '做天条件：'.decode('utf8'),time.localtime().tm_hour,is_zuotian
 
-                if (time.localtime().tm_hour == 7) and (not is_zuotian):
+                if (time.localtime().tm_hour == 5) and (not is_zuotian):
                     message('去领做天任务啦'.decode('utf8'))
                     #进入昨天逻辑
                     Zuotian().go()
                     is_zuotian = True
+                if (time.localtime().tm_hour == 14) and (not is_zuotian):
+                    message('去单人'.decode('utf8'))
+                    #进入昨天逻辑
+                    danren()
 
 
                 message('等待5s判断是否有香'.decode('utf8'))

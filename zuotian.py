@@ -80,22 +80,23 @@ class Zuotian:
                 mouse_click(1016,635)
                 time.sleep(2)
             if not checkZhandou():
-                if checkIsMission('天庭降妖'):
-                    message('在任务中'.decode('utf8'))
-                    self.not_have_mission = 0
-                    if self.checkSecretMonster():
-                        message('检测到神秘妖王'.decode('utf8'))
-                        mouse_click(1249,412)
+                if checkIsDahua():
+                    if checkIsMission('天庭降妖'):
+                        message('在任务中'.decode('utf8'))
+                        self.not_have_mission = 0
+                        if self.checkSecretMonster():
+                            message('检测到神秘妖王'.decode('utf8'))
+                            mouse_click(1249,412)
+                        else:
+                            mouse_click(1249,358)
                     else:
-                        mouse_click(1249,358)
-                else:
-                    self.not_have_mission += 1
-                    message(('不在任务第%d次'%(self.not_have_mission)).decode('utf8'))
-                    if self.not_have_mission > 10:
-                        #已经结束
-                        #回悲剧
-                        go_back_beiju()
-                        break
+                        self.not_have_mission += 1
+                        message(('不在任务第%d次'%(self.not_have_mission)).decode('utf8'))
+                        if self.not_have_mission > 10:
+                            #已经结束
+                            #回悲剧
+                            go_back_beiju()
+                            break
 
             time.sleep(2)
 

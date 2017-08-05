@@ -4,10 +4,12 @@ from shimen import Shimen
 from wuhuan import Wuhuan
 from bangpai import Bangpai
 
-
-
-if __name__ == "__main__":
+def danren():
     Baotu().go()
     Shimen().go()
     Bangpai().go()
     Wuhuan().go()
+
+
+if __name__ == "__main__":
+    danren()

@@ -134,6 +134,10 @@ def diffTwoImage(img1,img2):
         return False
 
 def checkIsMission(name):
+
+    #判断是否打开任务面板
+    check_mission_pannel_open()
+
     missionImage = ImageGrab.grab((1160,318,1240,338))
     enhancer = ImageEnhance.Contrast(missionImage)
     im = enhancer.enhance(3)
@@ -203,8 +207,21 @@ def find_sheyao_xiang():
     color = missionImage.getpixel((349,106))
     if '%d'*3%color=='505046':
         return (1009+77+77+77,426+88)
-
-
+def check_mission_pannel_open():
+    '''检查任务面板是否打开，如果关闭自动打开'''
+    log(u'抓取屏幕')
+    imcheckopen = ImageGrab.grab((1132,330,1164,360))
+    color = imcheckopen.getpixel((18,13))
+    log(u'抓取屏幕成功')
+    if '%d'*3%color=='249229208':
+        message(u'任务栏已经打开')
+        return True
+    else:
+        print '%d'*3%color
+        message(u'打开任务栏')
+        mouse_click(1386,346)
+        time.sleep(2)
+        return False
 if __name__ == "__main__":
     time.sleep(3)
-    mouse_move(*find_sheyao_xiang())
+    check_mission_pannel_open()

@@ -31,7 +31,7 @@ class Wuhuan:
 
     def go(self):
         self.go_get_mission()
-        time.sleep(60*8)
+        time.sleep(60*6)
         go_back_beiju()
 
 if __name__ == "__main__":
